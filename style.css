@@ -1,0 +1,44 @@
+*,
+*::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(65, 65, 65);
+    color: white;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.random-dog {
+    width: 6rem;
+    height: 2.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    background-color: darkgray;
+    transition: all 500ms ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.random-dog:hover {
+    color: black;
+    background-color: blueviolet;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.dog-image {
+    margin: 2rem;
+    padding: 1rem;
+}
