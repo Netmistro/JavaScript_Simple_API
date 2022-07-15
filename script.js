@@ -15,11 +15,14 @@ const randomDog = document.querySelector('.random-dog');
 const dogImage = document.querySelector('.dogImage');
 const errorMessage = document.querySelector('.error-message');
 
+dogImage.style.visibility = 'hidden';
+
 randomDog.addEventListener('click', () => {
     fetch('https://dog.ceo/api/breeds/image/random')
         .then(Response => Response.json())
         .then(json => {
             if (json.response = "success") {
+                dogImage.style.visibility = 'visible';
                 dogImage.src = json.message;
                 console.log(json.message);
             } else {
